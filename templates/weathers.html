@@ -1,0 +1,54 @@
+{% extends "layout.html" %}
+
+{% block main %}
+    <div class="container-fluid">
+        <table class="table">
+            <caption class="text-center">Weather information for <span>{{ location }}</span></caption>
+            <thead>
+                <tr>
+                    <th>Information</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Latitude</td>
+                    <td>{{ weathers.lat }} </td>
+                </tr>
+                <tr>
+                    <td>Longitude</td>
+                    <td>{{ weathers.lon }} </td>
+                </tr>
+                <tr>
+                    <td>Description</td>
+                    <td>{{ weathers.description }} </td>
+                </tr>
+                <tr>
+                    <td>Temperature</td>
+                    <td>{{ weathers.temperature }} </td>
+                </tr>
+                <tr>
+                    <td>Feels Like</td>
+                    <td>{{ weathers.feels_like}} </td>
+                </tr>
+                <tr>
+                    <td>Wind</td>
+                    <td>{{ weathers.wind }} </td>
+                </tr>
+                <tr>
+                    <td>Country</td>
+                    <td>{{ weathers.country }} </td>
+                </tr>
+                <tr>
+                    <td>Sunrise</td>
+                    <td>{{ weathers.sunrise }} </td>
+                </tr>
+                <tr>
+                    <td>Sunset</td>
+                    <td>{{ weathers.sunset }} </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+{% endblock %}

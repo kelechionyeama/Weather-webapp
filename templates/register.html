@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    <div class="py-5">
+        Register
+    </div>
+{% endblock %}
+
+{% block body %}
+    <form action="/register" method="post">
+        <div class="py-2">
+            <input class="form-control mx-auto w-auto" autocomplete="off" autofocus name="username" type="text" placeholder="Username">
+        </div>
+        <div class="py-2" >
+            <input class="form-control mx-auto w-auto" autocomplete="off" autofocus name="password" type="password" placeholder="Password">
+        </div>
+        <div class="py-2" >
+            <input class="form-control mx-auto w-auto" autocomplete="off" autofocus name="Cpassword" type="password" placeholder="Confirm Password">
+        </div>
+        <div class="py-2">
+            <button class="btn btn-primary" type="submit">Register</button>
+        </div>
+    </form>
+{% endblock %}

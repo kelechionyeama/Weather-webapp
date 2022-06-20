@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block main %}
+    <div class="text-center">
+        <div class="py-3">
+            <h2><strong>Weather Information</strong></h2>
+        </div>
+        <p>
+            Get the weather information of any city around the world!
+        </p>
+
+        <form action="/weather" method="post">
+            <input class="form-control mx-auto w-auto" autocomplete="off" autofocus type="text" name="city" placeholder="City">
+            <div class="py-3">
+                <button class="btn btn-primary" type="submit">Get Info</button>
+            </div>
+        </form>
+    </div>
+
+
+{% endblock %}
